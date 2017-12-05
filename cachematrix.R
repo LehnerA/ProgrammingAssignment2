@@ -3,8 +3,9 @@
 #'          and the matrix inversion can be retrieved with the @seealso cacheSolve function.
 #' @author Andreas Lehner
 
-#' @description Create a new matrix which is cacheable
+#' @description Create a new matrix which is cacheable.
 #' @param x The input matrix which will be made cachable
+#' @return A list containing the getter and setter for the matrix and its cached inversion
 makeCacheMatrix <- function(x = matrix())
 {
     # cached inversion
